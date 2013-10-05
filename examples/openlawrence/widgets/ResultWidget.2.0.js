@@ -20,13 +20,13 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
 
   template: function (doc) {
     var snippet = '';
-    if (doc.text.length > 300) {
-      snippet += doc.dateline + ' ' + doc.text.substring(0, 300);
-      snippet += '<span style="display:none;">' + doc.text.substring(300);
+    if (doc.content.length > 300) {
+      snippet += doc.dateline + ' ' + doc.content.substring(0, 300);
+      snippet += '<span style="display:none;">' + doc.content.substring(300);
       snippet += '</span> <a href="#" class="more">more</a>';
     }
     else {
-      snippet += doc.dateline + ' ' + doc.text;
+      snippet += doc.dateline + ' ' + doc.content;
     }
 
     var output = '<div><h2>' + doc.title + '</h2>';

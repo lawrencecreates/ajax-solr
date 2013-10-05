@@ -15,12 +15,13 @@ AjaxSolr.TextWidget = AjaxSolr.AbstractTextWidget.extend({
     $(this.target).find('input').bind('keydown', function(e) {
       if (e.which == 13) {
         var value = $(this).val();
-        if (value && self.set(value)) {
+        if (value && self.set("content:'" + value + "'")) {
           self.doRequest();
         }
       }
     });
   },
+
 
   afterRequest: function () {
     $(this.target).find('input').val('');
