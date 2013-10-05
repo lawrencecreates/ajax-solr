@@ -15,6 +15,11 @@ AjaxSolr.TextWidget = AjaxSolr.AbstractTextWidget.extend({
     $(this.target).find('input').bind('keydown', function(e) {
       if (e.which == 13) {
         var value = $(this).val();
+
+          // show the search
+          $('#current-search').text("Current Search :" +value);
+          
+
         if (value && self.set("content:'" + value + "'")) {
           self.doRequest();
         }
