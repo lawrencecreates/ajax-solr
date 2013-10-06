@@ -20,7 +20,7 @@ AjaxSolr.TextWidget = AjaxSolr.AbstractTextWidget.extend({
           $('#current-search').text("Current Search :" +value);
           
 
-        if (value && self.set("content:'" + value + "'")) {
+        if (value && self.set("content:\"" + value + "\""  )) {
           self.doRequest();
         }
       }

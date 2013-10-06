@@ -5,7 +5,7 @@ require.config({
     core: '../../../core',
     managers: '../../../managers',
     widgets: '../../../widgets',
-    searchsource: '../widgets'
+    searchsource: '../local_widgets'
   },
   urlArgs: "bust=" +  (new Date()).getTime()
 });
