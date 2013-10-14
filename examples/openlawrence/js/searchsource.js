@@ -24,7 +24,8 @@ define([
   $(function () {
 
       Manager = new AjaxSolr.Manager({
-          solrUrl: 'http://www.openlawrence.com:8983/solr/collection1/'
+          //solrUrl: 'http://www.openlawrence.com:8983/solr/collection1/'
+          solrUrl: 'https://openlawrence.com/solr/collection1/'
       });
 
       Manager.addWidget(new AjaxSolr.TextWidget({
