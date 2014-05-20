@@ -3,15 +3,46 @@
   margin: 0;
 } 
 
+html {
+
+
+}
+#logo{
+height:64px;
+width:100%;
+border-bottom:1px #ddd solid;
+padding:0px;
+margin:0px;
+
+background: -webkit-linear-gradient(90deg, rgba(92, 179, 255,50), white); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(90deg, rgba(92, 179, 255,50), white); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(90deg,rgba(92, 179, 255,50), white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(90deg, rgba(92, 179, 255,50), white); /* Standard syntax (must be last) */
+92, 179, 255
+}
+
+#container{
+background: -webkit-linear-gradient(white, rgba(230,230,230,100)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(white, rgba(230,230,230,100)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(white, rgba(230,230,230,100)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(white, rgba(230,230,230,100)); /* Standard syntax (must be last) */
+
+}
+
 body {
-  background: #fff url(../images/header.gif) repeat-x;
-  color: #333;
+  -background: #fff url(../images/header.gif) repeat-x;
+  -color: #333;  
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 18px;
+  -min-height:640px;
+  -padding-bottom:60px;
+  border-bottom:1px #aaa solid;
 }
 img {
   border: none;
+  padding:0px;
+  margin:0px;
 }
 a {
   color: #6998f0;
@@ -33,7 +64,9 @@ a:hover {
 /* header */
 
 #header {
-  height: 90px;
+  -height: 90px;
+  -height: 66px;
+  border-bottom:1px #ddd solid;
 }
 #header h1 {
   padding: 20px 0 5px 10px;
